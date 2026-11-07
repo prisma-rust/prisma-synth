@@ -1,0 +1,12 @@
+[package]
+name = "geiger-core"
+version.workspace = true
+edition.workspace = true
+license.workspace = true
+description = "Poisson event generator and procedural Geiger-Muller click synthesizer"
+
+[dependencies]
+
+[lib]
+name = "geiger_core"
+path = "src/lib.rs"

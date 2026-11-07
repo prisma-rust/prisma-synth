@@ -1,0 +1,13 @@
+[package]
+name = "synth-ffi"
+version.workspace = true
+edition.workspace = true
+license.workspace = true
+description = "C ABI for the event-driven synth, so Unity, Unreal and plain C can embed it"
+
+[lib]
+name = "synth_ffi"
+crate-type = ["cdylib", "staticlib", "rlib"]
+
+[dependencies]
+geiger-core = { workspace = true }

@@ -1,0 +1,16 @@
+[package]
+name = "geiger-cli"
+default-run = "geiger"
+
+autoexamples = true
+version.workspace = true
+edition.workspace = true
+license.workspace = true
+description = "Offline renderer: radiation ramp -> Geiger counter click track -> WAV + analysis"
+
+[dependencies]
+geiger-core = { workspace = true }
+
+[[bin]]
+name = "geiger"
+path = "src/main.rs"
